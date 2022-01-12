@@ -67,7 +67,7 @@ namespace RazorPagesTestSample.Data
         {
             return new List<Message>()
             {
-                new Message(){ Text = "You're standing on my scarf." },
+                new Message(){ Text = "You're standing on my scarf." }, // this is a comment
                 new Message(){ Text = "Would you like a jelly baby?" },
                 new Message(){ Text = "To the rational mind, nothing is inexplicable; only unexplained." }
             };
