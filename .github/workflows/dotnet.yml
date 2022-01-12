@@ -4,11 +4,11 @@ on:
   push:
     branches: [ main ]
     paths:
-      - ./Application
+      - Application/**
   pull_request:
     branches: [ main ]
     paths:
-      - ./Application
+      - Application/**
 jobs:
   build:
 
@@ -22,10 +22,10 @@ jobs:
         dotnet-version: 2.2
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: ./Application/src/RazorPagesTestSample
+      working-directory: Application/src/RazorPagesTestSample
     - name: Build
       run: dotnet build --no-restore
-      working-directory: ./Application/src/RazorPagesTestSample
+      working-directory: Application/src/RazorPagesTestSample
     - name: Test
       run: dotnet test --no-build --verbosity normal
-      working-directory: ./Application/tests/RazorPagesTestSample.Tests
+      working-directory: Application/tests/RazorPagesTestSample.Tests
