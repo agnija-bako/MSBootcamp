@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "webAppName": {
-            "defaultValue": "ms887devops-dev",
+            "defaultValue": "ms887devops-test",
             "type": "String"
         },
         "hostingPlanName": {
